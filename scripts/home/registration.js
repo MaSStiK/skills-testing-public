@@ -87,7 +87,6 @@ $(".registration__form").submit((event) => {
         return
     }
 
-
     // Если все проверки прошло - отключаем кнопку и ждем ответа от сервера
     $("#register-user").attr("disabled", true).html("Подождите")
 
