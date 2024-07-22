@@ -8,7 +8,7 @@ $("#show-rate-yourself").on("click tap", () => {
 // Если нету информации об регистрации - удаляем и перекидаем на главную страницу
 if (!localStorage.antifragile_userData) {
     localStorage.clear()
-    window.open("/", "_self")
+    window.open("../", "_self")
 } else { // В ином случае проверяем есть ли сохраненная информация о тестировании
     if (localStorage.antifragile_questionCurrent) {
         if (Date.now() - localStorage.antifragile_questionLastClicked > 60000) {

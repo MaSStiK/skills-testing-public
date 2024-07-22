@@ -169,7 +169,7 @@ function sendTesting() {
     localStorage.antifragile_card = JSON.stringify(newData)
 
     // Результат записан
-    window.open("/result", "_self")
+    window.open("../result", "_self")
 
     // Удаляем информацию об тестировании из браузера
     delete localStorage.antifragile_questions

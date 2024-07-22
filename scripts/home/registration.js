@@ -108,5 +108,5 @@ $(".registration__form").submit((event) => {
     localStorage.antifragile_userData = JSON.stringify(newData)
 
     // Успешная регистрация
-    window.open("/testing", "_self")
+    window.open("../testing", "_self")
 })

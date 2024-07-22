@@ -82,5 +82,5 @@ $(".login__form").submit((event) => {
     localStorage.antifragile_userData = JSON.stringify(newData)
 
     // Успешный вход
-    window.open("/testing", "_self")
+    window.open("../testing", "_self")
 })

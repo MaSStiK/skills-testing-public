@@ -7,12 +7,12 @@ $("#goto-rating").on("click tap", () => {
 // Кнопка "Выйти" в card выходит из профиля
 $("#exit-profile").on("click tap", () => {
     localStorage.clear()
-    window.open("/", "_self")
+    window.open("../", "_self")
 })
 
 
 // Если нету информации об регистрации или одного из полей, то удаляем и перекидаем на главную страницу
 if (!localStorage.antifragile_userData) {
     localStorage.clear()
-    window.open("/", "_self")
+    window.open("../", "_self")
 }

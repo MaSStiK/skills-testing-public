@@ -4,7 +4,7 @@ const userData = JSON.parse(localStorage.antifragile_userData)
 // Получаем данные о карточке
 if (!userCard.exam_date) {
     // Если нету информации от тестировании 0 перекинет на тест
-    window.open("/testing", "_self")
+    window.open("../testing", "_self")
 }
 
 $("#card-nickname").text(userCard.nickname) // Никнейм
