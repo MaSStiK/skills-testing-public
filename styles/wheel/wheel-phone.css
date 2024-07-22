@@ -1,0 +1,62 @@
+/* Переход на мобильную версию */
+@media screen and (max-width: 1200px) {
+    /* Секция испытай удачу колеса */
+    .wheel-section {
+        min-height: 770px;
+        height: auto;
+        padding: 40px 10px 60px 10px;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+
+        background-image: url("https://static.tildacdn.com/tild6439-3930-4230-b034-636134656564/wheel-bg-phone.png");
+        background-position: top;
+    }
+
+    /* Блок который держит нужную ширину */
+    .wheel {
+        width: min(500px, 100%);
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+
+    /* Контейнер в котором все блоки */
+    .wheel__container {
+        width: min(560px, 100%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        margin-bottom: 0px;
+    }
+
+    /* Заголовок "Испытай удачу Колеса Фортуны!" */
+    .wheel__container-title {
+        width: 100%;
+        height: 60px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /* Текст "Участвуй в Колесе Фортуны..." */
+    .wheel__container-text {
+        width: 100%;
+        height: 80px;
+        font-size: 16px;
+
+        margin-top: 70px;
+    }
+
+    .wheel__container .button-yellow {
+        width: min(300px, 100%);
+        margin-top: 371px;
+    }
+}

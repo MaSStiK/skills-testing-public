@@ -1,0 +1,96 @@
+/* Чекбокс в форме */
+.checkbox {
+    display: block;
+    width: 100%; /* Ограничиваем ширину */
+    padding-left: 40px; /* Отступ от чекбокса */
+    position: relative;
+
+    font-size: 16px;
+    color: var(--text-white);
+
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Ссылка на политику конфиденциальности */
+.checkbox a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline;
+    border: none;
+    
+    text-decoration: underline !important;
+    font-weight: inherit;
+    font-size: inherit;
+    color: var(--text-white) !important;
+}
+
+/* Переход на мобильную версию */
+@media screen and (max-width: 1200px) {
+    .checkbox {
+        font-size: 12px;
+    }
+}
+
+/* Прячем стандартный чекбокс */
+.checkbox input[type=checkbox] {
+    height: 0;
+    width: 0;
+    position: absolute;
+
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* Кастомный чекбокс */
+.checkbox span {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border: 3px solid #ffffff;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+}
+
+/* Наведение на пк */
+@media (hover: hover) {
+    .checkbox:hover input[type=checkbox] ~ span {
+        background-color: #5e5e5e;
+    }
+}
+
+/* Клик на телефоне */
+@media (hover: none) {
+    .checkbox:active input[type=checkbox] ~ span {
+        background-color: #5e5e5e;
+    }
+}
+
+/* Когда чекбокс не активирован нету галочки */
+.checkbox span svg {
+    display: none;
+}
+
+/* Когда чекбокс активирован появляется галочка */
+.checkbox input[type=checkbox]:checked ~ span svg {
+    display: block;
+}

@@ -1,0 +1,76 @@
+/* Переход на мобильную версию */
+@media screen and (max-width: 1200px) {
+    /* Блок пользователя в рейтинге */
+    .rating__user {
+        height: auto;
+        padding-right: 12px;
+    }
+
+    /* Скрываем последние 5 строчек */
+    /* .rating__user:nth-of-type(6),
+    .rating__user:nth-of-type(7),
+    .rating__user:nth-of-type(8),
+    .rating__user:nth-of-type(9),
+    .rating__user:nth-of-type(10) {
+        display: none;
+    } */
+
+    /* Имя участника */
+    .rating__user-name {
+        font-size: 12px;
+
+        margin-left: 0px;
+    }
+
+    /* Процент рейтинга */
+    .rating__user-percent {
+        padding-left: 20px;
+        font-size: 18px;
+
+        margin-right: 0px;
+        margin-left: auto;
+    }
+
+    /* Время прохождения */
+    .rating__user-percent span {
+        /* Ограничение по максимальной ширине */
+        width: 100px;
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    /* Рейтинг пользователя (прогрессбар) */
+    .rating__user-progressbar-bg {
+        width: 100%; /* Минус отступ слева */
+        margin: 10px 0px;
+    }
+
+    /* Медалька справа от блока */
+    .rating__user-medal {
+        width: 20px;
+        height: 24px;
+        position: static;
+    }
+}
+
+/* Сдвигаем время прохождения */
+@media screen and (max-width: 400px) {
+    /* Процент рейтинга */
+    .rating__user-percent {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+    }
+
+    /* Время прохождения */
+    .rating__user-percent span {
+        display: block;
+    }
+}

@@ -1,0 +1,66 @@
+/* Логотип productstar */
+.login__logo {
+    position: absolute;
+    top: 30px;
+    right: 120px;
+    cursor: pointer;
+}
+
+
+/* Секция с регистрацией */
+.login-section {
+    background-color: var(--bg-black);
+    background-image: url("https://static.tildacdn.com/tild6632-6130-4938-a130-613434616165/login-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;     
+}
+
+/* Блок держащий заголовок и форму на одной высоте */
+.login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 116px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+/* Заголовок */
+.login__title {
+    width: 257px; /* По ширине как заголовок регистрации */
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: var(--text-white);
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+}
+
+.login__img {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, -20%);
+}
+
+
+/* Форма регистрации */
+.login__form {
+    width: 560px;
+}
+
+/* У всех инпутов отступ кроме первого */
+.login__form .custom-input:not(:first-of-type) {
+    margin-top: 28px;
+}
+
+.login__form > .button-yellow {
+    width: 50%;
+
+    margin: 50px auto 0 auto;
+}

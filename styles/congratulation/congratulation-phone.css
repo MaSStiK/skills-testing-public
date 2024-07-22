@@ -1,0 +1,52 @@
+/* Переход на мобильную версию */
+@media screen and (max-width: 1200px) {
+    /* Сектор с поздравлением */
+    .congratulation-section {
+        min-height: 500px;
+        height: auto;
+        padding: 40px 10px;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .congratulation {
+        width: min(500px, 100%);
+    }
+
+    /* Заголовок "Поздравляем!" */
+    .congratulation__title {
+        font-size: 25px;
+    }
+
+    /* Блок с картинкой и текстом */
+    .congratulation__text-block {
+        gap: 14px;
+
+        margin-top: 23px;
+    }
+
+    /* У первого блока меньше отступ */
+    .congratulation__text-block:first-of-type {
+        margin-top: 30px;
+    }
+
+    /* Картинка внутри блока с текстом */
+    .congratulation__text-block img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Текст поздравления */
+    .congratulation__text {
+        width: calc(100% - 20px - 14px);
+        font-size: 16px;
+    }
+
+    /* Кнопка "Получить Roadmap" */
+    .congratulation .button-yellow {
+        width: min(300px, 100%);
+
+        margin-top: 48px;
+    }
+}

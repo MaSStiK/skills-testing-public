@@ -1,0 +1,106 @@
+/* Переход на мобильную версию */
+@media screen and (max-width: 1200px) {
+    /* Секция испытай удачу колеса */
+    .rate-website-section {
+        min-height: 500px;
+        height: auto;
+        padding: 40px 10px;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    /* Блок с содержимым */
+    .rate-website {
+        width: min(500px, 100%);
+    }
+
+    /* Текст "Мы будем рады..." */
+    .rate-website__text {
+        padding-left: 30px;
+        position: relative;
+
+        font-size: 16px;
+    }
+
+    /* Звездочка в начале каждого текстового блока */
+    .rate-website__text:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("https://static.tildacdn.com/tild6462-3137-4133-b134-616638396332/star.png");
+        background-size: 20px;
+        background-repeat: no-repeat;
+    }
+
+    /* Нижняя часть блока с оценкой */
+    .rate-website__bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 76px;
+
+        margin-top: 82px;
+    }
+
+    /* Контейнер с оценкой и кнопкой */
+    .rate-website__stars-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .rate-website__share .rate-website__message {
+        display: block;
+        margin-top: 25px;
+
+    }
+
+    /* Оценить сайт */
+    .rate-website__stars {
+        width: 255px;
+
+    }
+
+    /* Звездочки */
+    .rate-website__stars img {
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+    }
+
+    /* Блок с кнопками поделиться */
+    .rate-website__share {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 25px;
+    }
+
+    /* Текст "Понравился тест?..." */
+    .rate-website__share-text {
+        margin-top: 0px;
+    }
+
+    /* Кнопки поделиться */
+    .rate-website__share-buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 17px;
+    }
+}

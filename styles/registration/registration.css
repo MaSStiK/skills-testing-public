@@ -1,0 +1,66 @@
+/* Секция с регистрацией */
+.registration-section {
+    background-color: var(--bg-black);
+    background-image: url("https://static.tildacdn.com/tild3736-6262-4934-a361-626536356230/registration-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+/* Блок держащий заголовок и форму на одной высоте */
+.registration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 116px;
+    position: relative;
+}
+
+/* Заголовок */
+.registration__title {
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--text-white);
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+}
+
+/* Картинки регистрации */
+.registration__img {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, -40%);
+}
+
+
+/* Форма регистрации */
+.registration__form {
+    width: min(560px, 100%);
+}
+
+/* У всех инпутов отступ кроме первого */
+.registration__form .custom-input:not(:first-of-type) {
+    margin-top: 28px;
+}
+
+/* Чекбокс */
+.registration__form .checkbox {
+    margin-top: 28px;
+}
+
+#register-user {
+    width: 50%;
+
+    margin: 50px auto 0 auto;
+}
+
+.registration__form > .button-yellow {
+    width: 50%;
+
+    margin: 30px auto 0 auto;
+}

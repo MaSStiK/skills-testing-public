@@ -1,0 +1,20 @@
+/* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+
+
+:root {
+    --text-white: #FFFFFF;
+    --text-darkblue: #1D2136;
+    --text-yellow: #ffd12d;
+    --text-red: #ff7676;
+}
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-darkblue);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    word-break: break-word;
+}

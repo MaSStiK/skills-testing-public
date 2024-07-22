@@ -1,0 +1,33 @@
+.card-modal__container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff88;
+    z-index: 999;
+}
+
+.card-modal__container.show {
+    display: flex;
+}
+
+.card-modal__content {
+    width: min(350px, 100%);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--bg-gray);
+    border-radius: 15px;
+}
+
+/* Отключение прокрутки у страницы */
+body.no-scroll {
+    overflow: hidden;
+}

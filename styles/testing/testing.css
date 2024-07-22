@@ -1,0 +1,145 @@
+/* Секция тестирования */
+.testing-section {
+    display: none;
+}
+
+.testing {
+    width: min(960px, 100%);
+}
+
+/* Номер вопроса */
+.testing__question-number {
+    font-weight: 700;
+}
+
+.testing__question-number span {
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+/* Текст вопроса */
+.testing__question {
+    font-weight: 700;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    margin-top: 30px;
+}
+
+/* Контейнер с вариантами ответов */
+.testing__answers-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+
+    margin-top: 30px;
+}
+
+
+/* Варианты ответов (Радио инпуты) */
+.testing__answer {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-height: 30px;
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 6px;
+
+    cursor: pointer;
+}
+
+.answer-label {
+    width: calc(100% - 30px);
+    font-size: 16px;
+
+    margin-top: 5px;
+}
+
+/* Прячем стандартный радио инпут */
+.testing__answer input[type=radio] {
+    height: 0;
+    width: 0;
+    position: absolute;
+
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* Кастомный радио инпут */
+.testing__answer div {
+    width: 24px;
+    height: 24px;
+    position: relative;
+
+    border: 2px solid var(--bg-darkblue);
+    border-radius: 50%;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+
+    margin-top: 3px;
+}
+
+/* Наведение на пк */
+@media (hover: hover) {
+    .testing__answer:hover input[type=radio] ~ div {
+        background-color: #d6d6d6;
+    }
+}
+
+/* Клик на телефоне */
+@media (hover: none) {
+    .testing__answer:active input[type=radio] ~ div {
+        background-color: #d6d6d6;
+    }
+}
+
+/* Когда инпут активирован появляется кружочек внутри */
+.testing__answer input[type=radio]:checked ~ div::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    background-color: var(--bg-darkblue);
+}
+
+/* Нижняя часть тестирования, кнопка и таймер */
+.testing__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 44px;
+
+    margin-top: 50px;
+}
+/* Таймер */
+/* .testing__bottom-timer {} */
+
+.testing__bottom-timer span {
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+}

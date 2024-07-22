@@ -1,0 +1,65 @@
+
+/* Переход на мобильную версию */
+@media screen and (max-width: 1200px) {
+    /* Логотип productstar */
+    .login__logo {
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Секция с регистрацией */
+    .login-section {
+        min-height: 380px;
+        height: 100vh;
+        padding: 100px 10px 40px 10px;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+
+        background-image: url("https://static.tildacdn.com/tild3164-3466-4630-b365-336139356131/login-bg-phone.png");
+        background-position: top left;
+    }
+
+    /* Блок держащий заголовок и форму на одной высоте */
+    .login {
+        width: min(500px, 100%);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 40px;
+    }
+
+    /* Заголовок */
+    .login__title {
+        width: 100%;
+        font-size: 25px;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+    }
+
+
+    /* Картинки регистрации */
+    .login__img {
+        display: none;
+    }
+
+    .login__form {
+        width: 100%;
+    }
+
+    /* У всех инпутов отступ кроме первого */
+    .login__form .custom-input:not(:first-of-type) {
+        margin-top: 30px;
+    }
+
+    .login__form > .button-yellow {
+        width: min(300px, 100%);
+
+        margin: 30px auto 0 auto;
+    }
+}

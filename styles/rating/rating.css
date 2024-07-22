@@ -1,0 +1,67 @@
+/* Секция с рейтингом участников */
+.rating-section {
+    height: 788px;
+}
+
+/* Блок в секции */
+.rating {
+    width: min(982px, 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/* Заголовок "Рейтинг участников" */
+.rating__title {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+/* Подзаголовок "Создан на основании..." */
+.rating__subtitle {
+    font-weight: 600;
+    font-size: 18px;
+
+    margin-top: 10px;
+}
+
+
+/* Контейнер с рейтингом участников */
+.rating__container {
+    width: 100%;
+    height: 513px;
+    overflow-x: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    margin-top: 9px;
+}
+
+/* Текст "Попади в рейтинг прямо сейчас" */
+.rating__text {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Кнопки под рейтингом */
+.rating__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    margin-top: 17px;
+}

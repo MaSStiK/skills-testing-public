@@ -1,0 +1,78 @@
+/* Телефонный лейбл Никнейма */
+.label-phone {
+    display: none;
+}
+
+/* Переход на мобильную версию */
+@media screen and (max-width: 1200px) {
+    /* Секция с регистрацией */
+    .registration-section {
+        min-height: 900px;
+        height: auto;
+        padding: 42px 8px 250px 8px;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+
+        background-image: url("https://static.tildacdn.com/tild6262-3639-4630-a138-376136313564/registration-bg-phon.png");
+    }
+
+    /* Блок держащий заголовок и форму на одной высоте */
+    .registration {
+        width: min(500px, 100%);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 40px;
+    }
+
+    /* Заголовок */
+    .registration__title {
+        font-size: 25px;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+    }
+
+
+    /* Картинки регистрации */
+    .registration__img {
+        display: none;
+    }
+
+
+    /* У всех инпутов отступ кроме первого */
+    .registration__form .custom-input:not(:first-of-type) {
+        margin-top: 30px;
+    }
+
+    /* Телефонный лейбл Никнейма включаем, а лейбл для пк выключаем */
+    .label-pc {
+        display: none;
+    }
+
+    .label-phone {
+        display: block;
+    }
+
+    /* Чекбокс */
+    .registration__form .checkbox {
+        margin-top: 36px;
+    }
+
+    #register-user {
+        width: min(300px, 100%);
+
+        margin: 30px auto 0 auto;
+    }
+
+    .registration__form > .button-yellow {
+        width: min(300px, 100%);
+
+        margin: 30px auto 0 auto;
+    }
+}

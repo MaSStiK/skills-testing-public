@@ -1,0 +1,186 @@
+/* Контейнер с информацией */
+.card-data__container {
+    width: min(982px, 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+
+    margin-top: 24px;
+}
+
+/* Никнейм */
+.card-data__nickname {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+/* Строка с информацией */
+.card-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0 20px;
+}
+
+/* Номер пункта */
+.card-data__position {
+    width: 26px;
+    height: 26px;
+    position: relative;
+
+    border: 1px solid #959393;
+    border-radius: 50%;
+    background-color: #ffd12d;
+}
+
+/* Цифра в номере */
+.card-data__position::after {
+    content: attr(data-position);
+    width: 26px;
+    font-size: 18px;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+/* Название пункта */
+.card-data__text {
+    padding: 10px 0;
+
+    font-size: 18px;
+    color: var(--text-darkblue);
+}
+
+/* Большой текст */
+.card-data__text_big {
+    font-weight: 700;
+}
+
+/* Иконка уровня */
+.card-data__skill-level {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-data__skill-level svg {
+    width: 30px;
+    height: 30px;
+}
+
+/* Процент */
+.card-data__percent {
+    font-weight: 600;
+    font-size: 26px;
+
+    margin-left: auto;
+}
+
+/* Рейтинг пользователя (прогрессбар) */
+.card-data__progressbar-bg {
+    width: calc(100% - 10px); /* Минус отступ слева */
+    height: 15px;
+    position: relative;
+    background-color: var(--bg-gray);
+
+    margin: 10px 0 10px 10px;
+}
+
+.card-data__progressbar {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-darkblue);
+}
+
+
+/* Медалька если ты в топ 3 */
+.card-data__medal {
+    display: none;
+    position: absolute;
+    top: 18px;
+    right: 21px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/* Картинка медальки */
+.card-data__medal img {
+    width: 93px;
+    height: 112px;
+}
+
+/* Блок внутри карточки */
+.card-data__medal-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/* Текст "Поздравляем! Ты попал в ТОП рейтинга!..." */
+.card-data__medal-text {
+    font-size: 16px;
+    text-align: center;
+
+    margin-top: 24px;
+}
+
+.card-data__medal-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 38px;
+
+    margin-top: 13px;
+}
+
+.card-data__medal-share-vk {
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    background-image: url("https://static.tildacdn.com/tild3338-3331-4161-b334-376236393936/share-vk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.card-data__medal-share-linkedin {
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    background-image: url("https://static.tildacdn.com/tild3564-3563-4431-b161-613530656232/share-linkedin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}

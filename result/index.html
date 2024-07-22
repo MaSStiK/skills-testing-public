@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://static.tildacdn.com/tild3666-6133-4536-a266-303938396334/favicon.ico" type="image/x-icon">
+    <title>Тестирование навыков</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/text.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/input.css">
+    <link rel="stylesheet" href="../styles/checkbox.css">
+
+    <link rel="stylesheet" href="../styles/card/card.css">
+    <link rel="stylesheet" href="../styles/card/card-phone.css">
+    <link rel="stylesheet" href="../styles/card/card-data.css">
+    <link rel="stylesheet" href="../styles/card/card-data-phone.css">
+    <link rel="stylesheet" href="../styles/card/modal.css">
+
+    <link rel="stylesheet" href="../styles/rating/rating.css">
+    <link rel="stylesheet" href="../styles/rating/rating-phone.css">
+    <link rel="stylesheet" href="../styles/rating/rating-user.css">
+    <link rel="stylesheet" href="../styles/rating/rating-user-phone.css">
+
+    <link rel="stylesheet" href="../styles/congratulation/congratulation.css">
+    <link rel="stylesheet" href="../styles/congratulation/congratulation-phone.css">
+
+    <link rel="stylesheet" href="../styles/rate-website/rate-website.css">
+    <link rel="stylesheet" href="../styles/rate-website/rate-website-phone.css">
+
+    <link rel="stylesheet" href="../styles/wheel/wheel.css">
+    <link rel="stylesheet" href="../styles/wheel/wheel-phone.css">
+</head>
+<body>
+    <article>
+        <section class="card-section">
+            <div class="card">
+                <p class="card__message"><img src="https://static.tildacdn.com/tild6462-3137-4133-b134-616638396332/star.png" alt="card-star">Готово. Тест пройден! Твой рейтинг в управлении продуктами теперь известен и внесен в общий рейтинг</p>
+                <h1 class="card__title">Личная карточка участника</h1>
+                
+                <div class="card-data__container">
+                    <h2 class="card-data__nickname" id="card-nickname"></h2>
+
+                    <div class="card-data__medal">
+                        <img src="https://static.tildacdn.com/tild6434-3139-4165-b238-383132613163/card-medal.png" alt="card-medal">
+                        <div class="card-data__medal-block">
+                            <p class="card-data__medal-text">Поздравляем! Ты попал в ТОП рейтинга! <br>Расскажи об этом друзьям</p>
+                            <div class="card-data__medal-buttons">
+                                <button class="card-data__medal-share-vk"></button>
+                                <button class="card-data__medal-share-linkedin"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-data">
+                        <div class="card-data__position" data-position="1"></div>
+                        <p class="card-data__text card-data__text-pc">Количество правильных ответов</p>
+                        <p class="card-data__text card-data__text-phone">Количество верных ответов</p>
+                        <p class="card-data__text card-data__text_big" id="card-answers"></p>
+                    </div>
+                    <div class="card-data">
+                        <div class="card-data__position" data-position="2"></div>
+                        <p class="card-data__text card-data__text-pc">Скорость прохождения теста</p>
+                        <p class="card-data__text card-data__text-phone">Скорость прохождения</p>
+                        <p class="card-data__text card-data__text_big" id="card-time"></p>
+                    </div>
+                    <div class="card-data">
+                        <div class="card-data__position" data-position="3"></div>
+                        <p class="card-data__text card-data__text-pc">Дата прохождения теста</p>
+                        <p class="card-data__text card-data__text-phone">Дата прохождения</p>
+                        <p class="card-data__text card-data__text_big" id="card-date"></p>
+                    </div>
+                    <div class="card-data">
+                        <div class="card-data__position" data-position="4"></div>
+                        <p class="card-data__text card-data__text-pc">Уровень владения навыками</p>
+                        <p class="card-data__text card-data__text-phone">Уровень навыков</p>
+                        <div class="card-data__skill-level"></div>
+                        <p class="card-data__text card-data__text_big" id="card-level"></p>
+                    </div>
+                    <div class="card-data">
+                        <div class="card-data__position" data-position="5"></div>
+                        <p class="card-data__text">Моя позиция в рейтинге</p>
+                        <p class="card-data__text card-data__text_big" id="card-rating"></p>
+                    </div>
+                    <div class="card-data">
+                        <div class="card-data__position" data-position="6"></div>
+                        <p class="card-data__text">Мой результат</p>
+                        <p class="card-data__percent" id="card-result"></p>
+                        <div class="card-data__progressbar-bg">
+                            <div class="card-data__progressbar" id="card-result-progressbar"></div>
+                        </div>
+                    </div>
+                    <div class="card-data">
+                        <div class="card-data__position" data-position="7"></div>
+                        <p class="card-data__text">Средний результат участников</p>
+                        <p class="card-data__percent" id="card-average-result"></p>
+                        <div class="card-data__progressbar-bg">
+                            <div class="card-data__progressbar" id="card-average-result-progressbar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__buttons">
+                    <button class="button-darkblue alt" id="exit-profile">Выйти</button>
+                    <button class="button-yellow" id="card-open-modal">Пройти еще раз</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="card-modal__container">
+            <div class="card-modal__content">
+                <p>При повторном прохождении система возьмет в рейтинг твой последний результат</p>
+                <a class="button-yellow" href="/testing/?shuffle=true">Пройти еще раз</a>
+                <button class="button-darkblue alt" id="card-close-modal">Отмена</button>
+            </div>
+        </div>
+
+        <section class="rating-section" id="rating">
+            <div class="rating">
+                <h1 class="rating__title">Рейтинг участников</h1>
+                <h2 class="rating__subtitle">Создан на основании правильных ответов на вопросы теста</h2>
+
+                <!-- Контейнер с рейтингом участников -->
+                <div class="rating__container"></div>
+            </div>
+        </section>
+
+        <section class="congratulation-section">
+            <div class="congratulation">
+                <h1 class="congratulation__title">Поздравляем!</h1>
+                <div class="congratulation__text-block">
+                    <img src="https://static.tildacdn.com/tild6462-3137-4133-b134-616638396332/star.png" alt="star">
+                    <p class="congratulation__text">Теперь ты знаешь, на каком ты месте в рейтинге относительно других участников. Но всегда есть место для совершенствования. В качестве дополнительного бонуса мы подготовили для тебя Roadmap Продакт менеджера. Она поможет тебе оценить свои скиллы и понять, в каком направлении стоит развиваться в первую очередь.</p>
+                </div>
+                <div class="congratulation__text-block">
+                    <img src="https://static.tildacdn.com/tild6462-3137-4133-b134-616638396332/star.png" alt="star">
+                    <p class="congratulation__text">В качестве бонуса мы собрали в одном месте основные задачи продакта на каждом этапе карьеры, полезные инструменты и материалы для роста от грейда к грейду.</p>
+                </div>
+                <div class="congratulation__text-block">
+                    <img src="https://static.tildacdn.com/tild6462-3137-4133-b134-616638396332/star.png" alt="star">
+                    <p class="congratulation__text">Скачивай подробную дорожную карту продакта абсолютно бесплатно и развивай свою карьеру вместе с нами!</p>
+                </div>
+                <a class="button-yellow" href="https://new.productstar.ru/productcamp/roadmap/download/pdf" target="_blank">Получить Roadmap</a>
+            </div>
+        </section>
+
+        <section class="rate-website-section">
+            <div class="rate-website">
+                <p class="rate-website__text">Мы будем рады, если ты оценишь тест, оставишь обратную связь и поделишься им в социальных сетях. Это поможет нам улучшить тест и сделать его более полезным для всех участников.</p>
+                <div class="rate-website__bottom">
+                    <div class="rate-website__stars-container">
+                        <div class="rate-website__stars">
+                            <img src="https://static.tildacdn.com/tild3938-3536-4133-b466-643337656335/star-inactive.png" alt="star">
+                            <img src="https://static.tildacdn.com/tild3938-3536-4133-b466-643337656335/star-inactive.png" alt="star">
+                            <img src="https://static.tildacdn.com/tild3938-3536-4133-b466-643337656335/star-inactive.png" alt="star">
+                            <img src="https://static.tildacdn.com/tild3938-3536-4133-b466-643337656335/star-inactive.png" alt="star">
+                            <img src="https://static.tildacdn.com/tild3938-3536-4133-b466-643337656335/star-inactive.png" alt="star">
+                        </div>
+                        <button class="button-yellow alt" id="send-website-rate" disabled>Оценить</button>
+                        <p class="rate-website__message">Ваша оценка отправлена</p>
+                    </div>
+                    <div class="rate-website__share">
+                        <p class="rate-website__share-text">Понравился тест? Поделись им с друзьями</p>
+                        <div class="rate-website__share-buttons">
+                            <button class="rate-website__share-vk"></button>
+                            <button class="rate-website__share-linkedin"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wheel-section">
+            <div class="wheel">
+                <div class="wheel__container">
+                    <h1 class="wheel__container-title">Испытай удачу Колеса Фортуны!</h1>
+                    <p class="wheel__container-text">Участвуй в Колесе Фортуны и получи крутые призы от ProductStar! Это весело и легко, и каждый получит подарок</p>
+                    <a class="button-yellow" href="https://micro.productstar.ru/fortune-wheel">Крутить колесо</a>
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Показать сообщение об успешном прохождении теста -->
+    <script src="../scripts/result/show-mesage.js"></script>
+
+    <!-- Навигация -->
+    <script src="../scripts/result/result-navigation.js"></script>
+
+    <!-- Рендер блока с рейтингом -->
+    <script src="../scripts/rating.js"></script>
+
+    <!-- Отображение значений в карточке -->
+    <script src="../scripts/result/card.js"></script>
+
+    <!-- Оценить вебсайт -->
+    <script src="../scripts/result/rate-website.js"></script>
+
+    <!-- Поделится -->
+    <script src="../scripts/result/share.js"></script>
+
+    <!-- Модальное окно -->
+    <script src="../scripts/result/modal.js"></script>
+</body>
+</html>

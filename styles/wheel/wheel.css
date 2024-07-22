@@ -1,0 +1,45 @@
+/* Секция испытай удачу колеса */
+.wheel-section {
+    background-color: #F4F3F3;
+    background-image: url("https://static.tildacdn.com/tild6636-3333-4535-b966-653131646465/wheel-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+/* Блок который держит нужную ширину */
+.wheel {
+    width: min(1175px, 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+/* Контейнер в котором все блоки */
+.wheel__container {
+    width: min(560px, 100%);
+
+    margin-bottom: 100px;
+}
+
+/* Заголовок "Испытай удачу Колеса Фортуны!" */
+.wheel__container-title {
+    width: 456px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+/* Текст "Участвуй в Колесе Фортуны..." */
+.wheel__container-text {
+    width: 100%;
+    font-size: 26px;
+
+    margin-top: 78px;
+}
+
+.wheel__container .button-yellow {
+    width: 290px;
+    margin-top: 78px;
+}

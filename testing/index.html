@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://static.tildacdn.com/tild3666-6133-4536-a266-303938396334/favicon.ico" type="image/x-icon">
+    <title>Тестирование навыков</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/text.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/input.css">
+
+    <link rel="stylesheet" href="../styles/testing-info/testing-info.css">
+    <link rel="stylesheet" href="../styles/testing-info/testing-info-phone.css">
+
+    <link rel="stylesheet" href="../styles/testing/testing.css">
+    <link rel="stylesheet" href="../styles/testing/testing-phone.css">
+</head>
+<body>
+    <article>
+        <section class="testing-info-section">
+            <div class="testing-info">
+                <h1 class="testing-info__title">Добро пожаловать в тест!</h1>
+    
+                <div class="testing-info__block">
+                    <img src="https://static.tildacdn.com/tild3234-3364-4630-b931-303762303037/testing-1.png" alt="testing-info">
+                    <p class="testing-info__block-text">Сейчас ты будешь проходить тест, чтобы узнать свой рейтинг в управлении продуктами. Он состоит из 30 вопросов, на каждый вопрос дается 60 секунд. Если ответить не успеешь, то система посчитает его без ответа.</p>
+                </div>
+                <div class="testing-info__block">
+                    <p class="testing-info__block-text">После прохождения теста ты сможешь увидеть свой результат в общем рейтинге. Если ты займешь одно из ТОП-мест в рейтинге, то получишь особый значок который будет подтверждать твою особую позицию.</p>
+                    <img src="https://static.tildacdn.com/tild3337-6631-4638-a535-373532396162/testing-2.png" alt="testing-info">
+                </div>
+                <div class="testing-info__block">
+                    <img src="https://static.tildacdn.com/tild3762-3738-4464-a332-366163313965/testing-3.png" alt="testing-info">
+                    <p class="testing-info__block-text">Помни, что результаты теста не могут полностью отражать твои навыки. Они лишь дают представление о твоих сильных и слабых сторонах в управлении продуктами.</p>
+                </div>
+    
+                <h2 class="testing-info__subtitle">Желаем удачи в<br> прохождении теста!<span><img src="https://static.tildacdn.com/tild3436-3936-4962-a565-333233613064/testing-star.png" alt="testing-star"></span></h2>
+                <button class="button-yellow" id="show-rate-yourself">Начать</button>
+            </div>
+        </section>
+
+        <section class="testing-section">
+            <div class="testing">
+                <h3 class="testing__question-number">Вопрос <span>1/30</span></h3>
+                <p class="testing__question"></p>
+                <div class="testing__answers-container">
+                    <label class="testing__answer" id="testing__answer-1" for="answer-1">
+                        <input type="radio" id="answer-1" value="answer-1" name="answer">
+                        <div></div>
+                        <p class="answer-label"></p>
+                    </label>
+                    <label class="testing__answer" id="testing__answer-2" for="answer-2">
+                        <input type="radio" id="answer-2" value="answer-2" name="answer">
+                        <div></div>
+                        <p class="answer-label"></p>
+                    </label>
+                    <label class="testing__answer" id="testing__answer-3" for="answer-3">
+                        <input type="radio" id="answer-3" value="answer-3" name="answer">
+                        <div></div>
+                        <p class="answer-label"></p>
+                    </label>
+                    <label class="testing__answer" id="testing__answer-4" for="answer-4">
+                        <input type="radio" id="answer-4" value="answer-4" name="answer">
+                        <div></div>
+                        <p class="answer-label"></p>
+                    </label>
+                    <label class="testing__answer" id="testing__answer-5" for="answer-5">
+                        <input type="radio" id="answer-5" value="answer-5" name="answer">
+                        <div></div>
+                        <p class="answer-label"></p>
+                    </label>
+                </div>
+
+                <div class="testing__bottom">
+                    <button class="button-yellow" id="question-next">Далее</button>
+                    <p class="testing__bottom-timer">Осталось <span>40</span> сек </p>
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Тестирование -->
+    <script src="../scripts/testing/questions.js"></script>
+    <script src="../scripts/testing/testing.js"></script>
+
+    <!-- Навигация -->
+    <script src="../scripts/testing/testing-navigation.js"></script>
+</body>
+</html>

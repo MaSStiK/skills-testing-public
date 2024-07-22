@@ -1,0 +1,59 @@
+/* Переход на мобильную версию */
+@media screen and (max-width: 1200px) {
+    /* Секция с рейтингом участников */
+    .rating-section {
+        min-height: auto;
+        height: auto;
+        padding: 40px 10px 40px 10px;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    /* Блок в секции */
+    .rating {
+        width: min(500px, 100%);
+    }
+
+    /* Заголовок "Рейтинг участников" */
+    .rating__title {
+        font-size: 25px;
+    }
+
+    /* Подзаголовок "Создан на основании..." */
+    .rating__subtitle {
+        font-size: 12px;
+        text-align: center;
+
+        margin-top: 30px;
+    }
+
+
+    /* Контейнер с рейтингом участников */
+    .rating__container {
+        height: 584px;
+        gap: 8px;
+        
+        margin-top: 40px;
+    }
+
+    /* Текст "Попади в рейтинг прямо сейчас" */
+    .rating__text {
+        font-size: 16px;
+
+        margin-top: 30px;
+    }
+
+    /* Кнопки под рейтингом */
+    .rating__buttons {
+        flex-direction: column;
+        gap: 30px;
+
+        margin-top: 50px;
+    }
+
+    .rating__buttons button,
+    .rating__buttons a {
+        width: min(300px, 100%);
+    }
+}

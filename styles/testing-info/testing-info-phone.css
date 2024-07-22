@@ -1,0 +1,105 @@
+/* На пк не видно перенос строки */
+.testing-info__subtitle br {
+    display: none;
+}
+
+/* Переход на мобильную версию */
+@media screen and (max-width: 1200px) {
+    /* Секция c описанием тестирования */
+    .testing-info-section {
+        min-height: 1312px;
+        height: auto;
+        padding: 40px 10px 54px 10px;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    /* Заголовок "Добро пожаловать в тест!" */
+    .testing-info__title {
+        font-size: 25px;
+    }
+
+    /* Блок с информацией */
+    .testing-info__block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    /* Первый блок */
+    .testing-info__block:nth-of-type(1) {
+        gap: 0px;
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    
+    /* Второй блок */
+    .testing-info__block:nth-of-type(2) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        gap: 25px;
+        margin-right: 0px;
+        margin-top: 25px;
+    }
+
+    /* Третий блок */
+    .testing-info__block:nth-of-type(3) {
+        gap: 16px;
+        margin-left: 0px;
+        margin-top: 8px;
+    }
+
+    /* Текст внутри блока */
+    .testing-info__block-text {
+        width: min(400px, 100%);
+        padding-left: 30px;
+        position: relative;
+        font-size: 16px;
+    }
+
+    /* Звездочка в начале каждого текстового блока */
+    .testing-info__block-text:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("https://static.tildacdn.com/tild6462-3137-4133-b134-616638396332/star.png");
+        background-size: 20px;
+        background-repeat: no-repeat;
+    }
+
+    /* Подзаголовок "Желаем удачи в прохождении теста!" */
+    .testing-info__subtitle {
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+
+        margin-top: 60px;
+    }
+
+    .testing-info__subtitle br {
+        display: unset;
+    }
+
+    /* Картинка звездочки */
+    .testing-info__subtitle span {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 0px;
+        right: -40px;
+
+        margin-left: 0px;
+    }
+
+    .testing-info__subtitle span img {
+        width: 35px;
+        height: 35px;
+    }
+}

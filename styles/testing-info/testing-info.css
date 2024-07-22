@@ -1,0 +1,89 @@
+/* Секция c описанием тестирования */
+.testing-info-section {
+    display: none;
+}
+
+.testing-info {
+    width: min(760px, 100%);
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/* Заголовок "Добро пожаловать в тест!" */
+.testing-info__title {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+/* Блок с информацией */
+.testing-info__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/* Первый блок */
+.testing-info__block:nth-of-type(1) {
+    gap: 120px;
+    margin-left: 60px;
+    margin-top: 4px;
+}
+
+/* Второй блок */
+.testing-info__block:nth-of-type(2) {
+    gap: 55px;
+    margin-right: 60px;
+    margin-top: 4px;
+}
+
+/* Третий блок */
+.testing-info__block:nth-of-type(3) {
+    gap: 74px;
+    margin-left: 60px;
+    margin-top: 4px;
+}
+
+/* Текст внутри блока */
+.testing-info__block-text {
+    width: 360px;
+    font-size: 18px;
+}
+
+/* Подзаголовок "Желаем удачи в прохождении теста!" */
+.testing-info__subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 26px;
+    font-weight: 600;
+
+    margin-top: 10px;
+}
+
+/* Картинка звездочки */
+.testing-info__subtitle span {
+    width: 43px;
+    height: 43px;
+
+    margin-left: 8px;
+}
+
+/* Кнопка Далее */
+.testing-info > button {
+    margin-top: 30px;
+}

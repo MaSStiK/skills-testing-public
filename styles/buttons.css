@@ -1,0 +1,212 @@
+:root {
+    /* Желтая кнопка */
+    --button-yellow: #ffd12d;
+    --button-yellow-hover: #1D2136;
+    --button-yellow-text: #1D2136;
+    --button-yellow-hover-text: #ffffff;
+
+    /* Альтернативный эффект при наведении на желтую кнопку */
+    --button-yellowAlt-hover: #ffffff;
+    --button-yellowAlt-hover-text: #1D2136;
+
+    /* Темно синяя кнопка */
+    --button-darkblue:  #1D2136;
+    --button-darkblue-hover: #ffffff;
+    --button-darkblue-border: #ffffff;
+    --button-darkblue-text: #ffffff;
+    --button-darkblue-hover-text: #1D2136;
+
+    /* Альтернативный эффект при наведении на темно-синюю кнопку */
+    --button-darkblueAlt-hover: #ffd12d;
+    --button-darkblueAlt-hover-text: #1D2136;
+
+}
+
+
+button, a {
+    width: min(245px, 100%);
+    height: 46px;
+
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+
+    color: var(--text-white);
+    text-decoration: none;
+
+    /* Отключаем базовые стили */
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+}
+
+
+/* Отключенная кнопка */
+button:disabled {
+    color: #747474 !important;
+    border: 1px solid #747474 !important;
+    background-color: transparent !important;
+
+    cursor: not-allowed !important;
+}
+
+
+/* Зеленая кнопка */
+.button-yellow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    border-radius: 10px;
+    background-color: var(--button-yellow);
+    color: var(--button-yellow-text);
+}
+
+/* Перезапись стиля тильды */
+a.button-yellow {
+    color: var(--button-yellow-text) !important;
+}
+
+/* Наведение на пк */
+@media (hover: hover) {
+    .button-yellow:hover {
+        color: var(--button-yellow-hover-text);
+        background-color: var(--button-yellow-hover);
+    }
+
+    /* Перезапись стиля тильды */
+    a.button-yellow:hover {
+        color: var(--button-yellow-hover-text) !important;
+        background-color: var(--button-yellow-hover) !important;
+    }
+
+    /* Альтернативный вариант, кнопка становится белой */
+    .button-yellow.alt:hover {
+        color: var(--button-yellowAlt-text-hover);
+        background-color: var(--button-yellowAlt-hover);
+    }
+
+    /* Перезапись стиля тильды */
+    a.button-yellow.alt:hover {
+        color: var(--button-yellowAlt-text-hover) !important;
+        background-color: var(--button-yellowAlt-hover) !important;
+    }
+}
+
+/* Клик на телефоне */
+@media (hover: none) {
+    .button-yellow:active {
+        color: var(--button-yellow-hover-text);
+        background-color: var(--button-yellow-hover);
+    }
+
+    /* Перезапись стиля тильды */
+    a.button-yellow:active {
+        color: var(--button-yellow-hover-text) !important;
+        background-color: var(--button-yellow-hover) !important;
+    }
+
+    /* Альтернативный вариант, кнопка становится белой */
+    .button-yellow.alt:active {
+        color: var(--button-yellowAlt-text-hover);
+        background-color: var(--button-yellowAlt-hover);
+    }
+
+    /* Перезапись стиля тильды */
+    a.button-yellow.alt:active {
+        color: var(--button-yellowAlt-text-hover) !important;
+        background-color: var(--button-yellowAlt-hover) !important;
+    }
+}
+
+
+
+/* Темно-синяя кнопка */
+.button-darkblue {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    border-radius: 10px;
+    border: 1px solid var(--button-darkblue-border);
+    background-color: var(--button-darkblue);
+    color: var(--button-darkblue-text);
+}
+
+/* Перезапись стиля тильды */
+a.button-darkblue {
+    color: var(--button-darkblue-text) !important;
+}
+
+/* У альтернативной темно-синей кнопки нету обводки */
+.button-darkblue.alt {
+    border: none;
+}
+
+/* Наведение на пк */
+@media (hover: hover) {
+    .button-darkblue:hover {
+        color: var(--button-darkblue-hover-text);
+        background-color: var(--button-darkblue-hover);
+    }
+
+    /* Перезапись стиля тильды */
+    a.button-darkblue:hover {
+        color: var(--button-darkblue-hover-text) !important;
+        background-color: var(--button-darkblue-hover) !important;
+    }
+
+    /* Альтернативный вариант, кнопка становится желтой */
+    .button-darkblue.alt:hover {
+        color: var(--button-darkblueAlt-text-hover);
+        background-color: var(--button-darkblueAlt-hover);
+    }
+
+    /* Перезапись стиля тильды */
+    a.button-darkblue.alt:hover {
+        color: var(--button-darkblueAlt-text-hover) !important;
+        background-color: var(--button-darkblueAlt-hover) !important;
+    }
+}
+
+/* Клик на телефоне */
+@media (hover: none) {
+    .button-darkblue:active {
+        color: var(--button-darkblue-hover-text);
+        background-color: var(--button-darkblue-hover);
+    }
+
+    /* Перезапись стиля тильды */
+    a.button-darkblue:active {
+        color: var(--button-darkblue-hover-text) !important;
+        background-color: var(--button-darkblue-hover) !important;
+    }
+
+    /* Альтернативный вариант, кнопка становится желтой */
+    .button-darkblue.alt:active {
+        color: var(--button-darkblueAlt-text-hover);
+        background-color: var(--button-darkblueAlt-hover);
+    }
+
+    /* Перезапись стиля тильды */
+    a.button-darkblue.alt:active {
+        color: var(--button-darkblueAlt-text-hover) !important;
+        background-color: var(--button-darkblueAlt-hover) !important;
+    }
+}

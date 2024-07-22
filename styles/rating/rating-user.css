@@ -1,0 +1,104 @@
+/* Блок пользователя в рейтинге */
+.rating__user {
+    width: 100%;
+    height: 57px;
+    padding-right: 68px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+/* Верхняя часть */
+.rating__user-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/* Позиция участника в рейтинге */
+.rating__user-position {
+    width: 20px;
+    height: 20px;
+    position: relative;
+
+    border: 1px solid #959393;
+    border-radius: 50%;
+    background-color: #ffd12d;
+}
+
+/* Цифра рейтинга */
+.rating__user-position::after {
+    content: attr(data-position);
+    width: 20px;
+    font-size: 12px;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+/* Имя участника */
+.rating__user-name {
+    flex: 1;
+    padding: 0 10px;
+    font-size: 12px;
+
+    margin-left: 12px;
+}
+
+/* Процент рейтинга */
+.rating__user-percent {
+    font-weight: 600;
+    font-size: 18px;
+
+    margin-right: 18px;
+    margin-left: auto;
+}
+
+/* Время прохождения */
+.rating__user-percent span {
+    /* Ограничение по максимальной ширине */
+    width: 100px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+/* Рейтинг пользователя (прогрессбар) */
+.rating__user-progressbar-bg {
+    width: calc(100% - 10px); /* Минус отступ слева */
+    height: 15px;
+    position: relative;
+    background-color: var(--bg-gray);
+
+    margin: 10px 0 10px 10px;
+}
+
+.rating__user-progressbar {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-darkblue);
+}
+
+/* Медалька справа от блока */
+.rating__user-medal {
+    width: 40px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    right: 12px;
+}

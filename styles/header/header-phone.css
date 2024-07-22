@@ -1,0 +1,90 @@
+/* Переход на мобильную версию */
+@media screen and (max-width: 1200px) {
+    /* Главная секция */
+    header {
+        min-height: 1017px;
+        height: auto;
+        padding: 120px 10px 10px 10px;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+
+        background-image: url("https://static.tildacdn.com/tild6237-3831-4866-b730-636663313066/header-bg-phone.png");
+    }
+
+    /* Логотип productstar */
+    .header__logo {
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Блок держащий картинку и контейнер вместе */
+    .header {
+        width: min(500px, 100%);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 0px;
+    }
+
+    /* Картинка ракеты и ноутбука */
+    .header__rocket-image {
+        width: 340px;
+
+        margin-top: 0px;
+    }
+
+    .header__container-img {
+        display: none
+    }
+
+    /* Заголовок "Узнай свой..." */
+    .header__container-title {
+        font-size: 25px;
+    }
+
+    /* Список с информацией */
+    .header__container ul {
+        margin-left: 0px;
+        margin-top: 35px;
+    }
+
+    .header__container ul li {
+        padding-left: 14px;
+        font-size: 16px;
+
+        margin-top: 30px;
+    }
+
+    .header__container-buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        margin-left: 0px;
+        margin-top: 43px;
+    }
+
+    .header__container-buttons button {
+        width: min(300px, 100%);
+    }
+
+    .header__container-text {
+        font-size: 16px;
+        text-align: center;
+    
+        margin-left: 0px;
+        margin-top: 100px;
+    }
+}

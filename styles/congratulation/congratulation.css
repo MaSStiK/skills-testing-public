@@ -1,0 +1,60 @@
+/* Сектор с поздравлением */
+.congratulation-section {
+    height: 418px;
+    min-height: 418px;
+}
+
+.congratulation {
+    width: min(1130px, 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/* Заголовок "Поздравляем!" */
+.congratulation__title {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+/* Блок с картинкой и текстом */
+.congratulation__text-block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+
+    margin-top: 20px;
+}
+
+/* У первого блока больше отступ */
+.congratulation__text-block:first-of-type {
+    margin-top: 30px;
+}
+
+/* Картинка внутри блока с текстом */
+.congratulation__text-block img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Текст поздравления */
+.congratulation__text {
+    width: calc(100% - 30px - 40px);
+    font-size: 18px;
+}
+
+/* Кнопка "Получить Roadmap" */
+.congratulation .button-yellow {
+    width: 324px;
+
+    margin-top: 47px;
+}

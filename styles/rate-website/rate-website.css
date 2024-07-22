@@ -1,0 +1,133 @@
+/* Секция испытай удачу колеса */
+.rate-website-section {
+    height: 370px;
+    min-height: 370px;
+    background-color: var(--bg-darkblue);
+}
+
+/* Блок с содержимым */
+.rate-website {
+    width: min(1160px, 100%);
+}
+
+/* Текст "Мы будем рады..." */
+.rate-website__text {
+    font-size: 18px;
+    color: var(--text-white);
+}
+
+/* Нижняя часть блока с оценкой */
+.rate-website__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 360px;
+
+    margin-top: 40px;
+}
+
+/* Контейнер с оценкой и кнопкой */
+.rate-website__stars-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+}
+
+/* Оценить сайт */
+.rate-website__stars {
+    width: 340px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+/* Звездочки */
+.rate-website__stars img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+/* Предзагрузка активной звездочки */
+.rate-website__stars img::after {
+    content: url("https://static.tildacdn.com/tild6433-6663-4962-b666-323165346361/star-active.png");
+    width: 0px;
+    height: 0px;
+}
+
+/* Активная звезда */
+.rate-website__stars img.active {
+    content: url("https://static.tildacdn.com/tild6433-6663-4962-b666-323165346361/star-active.png");
+}
+
+.rate-website__message {
+    display: none;
+    height: 46px;
+    color: var(--text-white);
+    text-align: center;
+}
+
+
+/* Блок с кнопками поделиться */
+.rate-website__share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 53px;
+}
+
+/* Текст "Понравился тест?..." */
+.rate-website__share-text {
+    font-size: 16px;
+    color: var(--text-white);
+
+    margin-top: 15px;
+}
+
+/* Кнопки поделиться */
+.rate-website__share-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 37px;
+}
+
+/* Кнопка вк */
+.rate-website__share-vk {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    background-image: url("https://static.tildacdn.com/tild3338-3331-4161-b334-376236393936/share-vk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+/* Кнопка linkedin */
+.rate-website__share-linkedin {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    background-image: url("https://static.tildacdn.com/tild3564-3563-4431-b161-613530656232/share-linkedin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}

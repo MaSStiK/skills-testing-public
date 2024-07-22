@@ -1,0 +1,115 @@
+/* Главная секция */
+header {
+    position: relative;
+
+    background-color: var(--bg-black);
+    background-image: url("https://static.tildacdn.com/tild3432-3630-4039-b737-333832366136/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Логотип productstar */
+.header__logo {
+    position: absolute;
+    top: 30px;
+    right: 120px;
+    cursor: pointer;
+}
+
+
+/* Блок держащий картинку и контейнер вместе */
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 56px;
+    overflow: hidden;
+}
+
+/* Картинка ракеты и ноутбука */
+.header__rocket-image {
+}
+
+/* Контейнер с элементами */
+.header__container {
+    width: min(670px, 100%);
+    position: relative;
+}
+
+.header__container-img {
+    position: absolute;
+    top: 50px;
+    right: -130px;
+    pointer-events: none;
+}
+
+
+/* Заголовок "Узнай свой..." */
+.header__container-title {
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--text-white);
+}
+
+/* Желтое слово в заголовке */
+.header__container-title span {
+    font-weight: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    color: #facf37;
+}
+
+
+/* Список с информацией */
+.header__container ul {
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+.header__container ul li {
+    padding-left: 20px;
+    position: relative;
+
+    font-size: 18px;
+    color: var(--text-white);
+}
+
+.header__container ul li::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+
+    position: absolute;  
+    top: 10px;
+    left: 2px; 
+}
+
+.header__container-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+
+    margin-left: 54px;
+    margin-top: 50px;
+}
+
+.header__container-text {
+    color: var(--text-white);
+
+    margin-left: 25px;
+    margin-top: 100px;
+}
+
+.header__container-text a {
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: underline !important;
+    color: var(--text-white) !important;
+}
