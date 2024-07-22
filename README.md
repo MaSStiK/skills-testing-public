@@ -63,5 +63,5 @@ HTML, CSS, JavaScript, jQuery, IMask, API, Tilda.
 ![image](https://github.com/user-attachments/assets/b003d238-7893-4311-858f-bc84b2e983e2)
 ![image](https://github.com/user-attachments/assets/28b24bee-2555-430c-818b-90401cfaa4ad)
 
-· Переход на колесо фортуны](https://masstik.github.io/fortune-wheel-public/)
+· Переход на [колесо фортуны](https://masstik.github.io/fortune-wheel-public/)
 ![image](https://github.com/user-attachments/assets/c1240ce7-72e8-41aa-8f3f-d2d0166b6a2a)
