@@ -36,7 +36,7 @@ HTML, CSS, JavaScript, jQuery, IMask, API, Figma, Tilda.
 ![image](https://github.com/user-attachments/assets/1a05f2a2-9c15-4970-ae3a-37834a7d13ec)
 
 · Рейтинг участников
-![image](https://github.com/user-attachments/assets/384bb316-467a-40d9-9437-f94f8b7e1402)
+![image](https://github.com/user-attachments/assets/d6b286a7-6cf8-49a4-8694-cddf9daae124)
 
 · Регистрация
 ![image](https://github.com/user-attachments/assets/2cfbd9c7-83a2-40cf-8e9f-c5c2813bd4cf)
