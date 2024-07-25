@@ -103,7 +103,7 @@ function showRating(selfRating=0) {
                 <div class="rating__user-info">
                     <div class="rating__user-position" data-position="${i}"></div>
                     <div class="rating__user-name">${user.nickname}</div>
-                    ${i+1 <= 3 ? `<img class="rating__user-medal" src="https://static.tildacdn.com/tild6434-3139-4165-b238-383132613163/card-medal.png" alt="rating-medal-icon">` : ""}
+                    ${i <= 3 ? `<img class="rating__user-medal" src="https://static.tildacdn.com/tild6434-3139-4165-b238-383132613163/card-medal.png" alt="rating-medal-icon">` : ""}
                     <div class="rating__user-percent"><span>${timekeepingSplit[1]} мин. ${timekeepingSplit[2]} сек.</span> ${user.grade}%</div>
                 </div>
                 <div class="rating__user-progressbar-bg">

@@ -141,9 +141,6 @@ function sendTesting() {
 
     let exam_date = `${day}/${month}/${year}`
 
-    // Информация о пользователе
-    let userData = JSON.parse(localStorage.antifragile_userData)
-
     // Ответы
     let answers = {}
 
