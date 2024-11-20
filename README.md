@@ -29,7 +29,7 @@ HTML, CSS, JavaScript, jQuery, IMask, API, Figma, Tilda.
 
 ### Ссылки
 [Оригинальный сайт](https://micro.productstar.ru/antifragile) (Не работает)  
-[Рабочая версия сайта](https://masstik.github.io/skills-testing-public/) (Данные из формы никуда не отправляются, регистрация и вход упрощены, пин-коды упрощены)
+[Рабочая версия сайта](https://masstik.github.io/skills-testing-public/) (Данные из формы никуда не отправляются, регистрация и вход упрощены)
 
 ### Скриншоты сайта
 · Основная информация
