@@ -16,7 +16,7 @@
 5. Создать серверную логику для сбора и хранения результатов тестирования;
 6. Создать дизайн элементов интерфейса, связанных с рейтинговой системой.
 
-### Потенциальные пользователи Колеса фортуны
+### Потенциальные пользователи
 Участники онлайн и офлайн мероприятия ProductCamp — продакт-менеджеры, проджект-менеджеры, CPO, аналитики, продуктовые дизайнеры.
 
 ### Механика использования
@@ -30,6 +30,8 @@ HTML, CSS, JavaScript, jQuery, IMask, API, Figma, Tilda.
 ### Ссылки
 [Оригинальный сайт](https://micro.productstar.ru/antifragile) (Не работает)  
 [Рабочая версия сайта](https://masstik.github.io/skills-testing-public/) (Данные из формы никуда не отправляются, регистрация и вход упрощены)
+
+<!-- portfolio:hide:start -->
 
 ### Скриншоты сайта
 · Основная информация
@@ -65,3 +67,5 @@ HTML, CSS, JavaScript, jQuery, IMask, API, Figma, Tilda.
 
 · Переход на [колесо фортуны](https://github.com/MaSStiK/fortune-wheel-public)
 ![image](https://github.com/user-attachments/assets/c1240ce7-72e8-41aa-8f3f-d2d0166b6a2a)
+
+<!-- portfolio:hide:end -->
